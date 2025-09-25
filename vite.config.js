@@ -21,8 +21,8 @@ export default defineConfig({
             }, 
             output: {
                 assetFileNames: (assetInfo) => {
-                if (assetInfo.name == "style.css") return "styles.css";
-                    return "styles.css";
+                    if (assetInfo.name.indexOf('style.css')) return 'style.css';
+                    return assetInfo.name;
                 },
             }
         }
