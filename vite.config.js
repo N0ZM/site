@@ -18,6 +18,12 @@ export default defineConfig({
                 2: resolve(__dirname, '2/index.html'), 
                 'agents/1': resolve(__dirname, 'agents/1/index.html'), 
                 'agents/2': resolve(__dirname, 'agents/2/index.html'), 
+            }, 
+            output: {
+                assetFileNames: (assetInfo) => {
+                if (assetInfo.name == "style.css") return "styles.css";
+                    return "styles.css";
+                },
             }
         }
     }
