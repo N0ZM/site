@@ -6,8 +6,10 @@ import { defineConfig } from 'vite';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-    base: 'https://github.com/N0ZM/site/', 
+    // base: 'https://github.com/N0ZM/site/', 
+    base:'./', 
     build: {
+        assetsDir:'./', 
         outDir: 'docs', 
         rollupOptions: {
             input: {
