@@ -8,6 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
     base: 'https://github.com/N0ZM/site/', 
     build: {
+        outDir: 'docs', 
         rollupOptions: {
             input: {
                 1: resolve(__dirname, '1/index.html'), 
